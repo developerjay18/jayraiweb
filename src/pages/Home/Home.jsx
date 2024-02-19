@@ -12,6 +12,8 @@ import {
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import { ScrollToTop } from '../../components';
+import { wpLink } from '../../components/Navbar/data';
 
 function Home() {
   // State to keep track of the selected option
@@ -25,6 +27,7 @@ function Home() {
 
   return (
     <>
+      <ScrollToTop />
       {/* hero section */}
       <section
         id="home"
@@ -260,14 +263,15 @@ function Home() {
                         </div>
                       </div>
                     </div>
-                    <a
+                    <Link
                       className="btn home-banner-btn orange-btn mt-16 btn_effect"
-                      href="resume.html"
+                      to={wpLink}
                     >
-                      <span className="position-relative z-1">
-                        Download My CV
+                      <span className="z-1 position-relative flex gap-3 items-center">
+                        <i className="fa-brands fa-xl fa-whatsapp hover:text-pulp-orange"></i>
+                        Whatsapp Me
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -322,10 +326,7 @@ function Home() {
       </section>
 
       {/* projects section  */}
-      <section
-        id="portfolio"
-        className="portfolio-two pt-10 pb-20 bg-[#fff3ea]"
-      >
+      <section id="projects" className="portfolio-two pt-10 pb-20 bg-[#fff3ea]">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -528,7 +529,7 @@ function Home() {
 
       {/* testimonials section  */}
       <section
-        id="testimonial"
+        id="testimonials"
         className="testimonial lg:pt-20 lg:pb-10 bg-[#fff3ea]"
       >
         <div className="container">

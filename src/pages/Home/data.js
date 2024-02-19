@@ -13,7 +13,7 @@ const socialLinks = [
   },
   {
     name: ' fa-brands fa-whatsapp',
-    link: ' https://wa.me/+916351468706',
+    link: `https://wa.me/+916351468706?text=${'Hey! I came from your website and I want a website for my business.'}`,
   },
   {
     name: 'fa-solid fa-phone',

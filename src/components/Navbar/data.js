@@ -25,4 +25,10 @@ const navItems = [
   },
 ];
 
-export { navItems };
+const number = '+916351468706';
+const starterMessage =
+  'Hey! I came from your website and I want a website for my business.';
+
+const wpLink = `https://wa.me/${number}?text=${starterMessage}`;
+
+export { navItems, wpLink };

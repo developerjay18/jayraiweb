@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { navItems } from './data';
+import { Link } from 'react-scroll';
+import { Link as RLink } from 'react-router-dom';
+import { navItems, wpLink } from './data';
 import { Menu, X } from 'lucide-react';
 
 function Navbar() {
@@ -16,12 +17,14 @@ function Navbar() {
       <div className="relative w-full bg-white">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <div className="inline-flex items-center space-x-2 lg:hidden">
-            <span className="w-10">
-              <img
-                src="https://res.cloudinary.com/remind-cents-cloud/image/upload/v1707989183/jayraiweb/ebgaihyt77cngxge1inm.png"
-                alt=""
-              />
-            </span>
+            <RLink to={'/'} className="w-10">
+              <span className="w-10">
+                <img
+                  src="https://res.cloudinary.com/remind-cents-cloud/image/upload/v1707989183/jayraiweb/ebgaihyt77cngxge1inm.png"
+                  alt=""
+                />
+              </span>
+            </RLink>
           </div>
 
           <div className="lg:hidden">
@@ -33,12 +36,14 @@ function Navbar() {
                 <div className="px-5 pb-6 pt-5">
                   <div className="flex items-center justify-between">
                     <div className="inline-flex items-center space-x-2">
-                      <span className="w-10">
-                        <img
-                          src="https://res.cloudinary.com/remind-cents-cloud/image/upload/v1707989183/jayraiweb/ebgaihyt77cngxge1inm.png"
-                          alt=""
-                        />
-                      </span>
+                      <RLink to={'/'} className="w-10">
+                        <span className="w-10">
+                          <img
+                            src="https://res.cloudinary.com/remind-cents-cloud/image/upload/v1707989183/jayraiweb/ebgaihyt77cngxge1inm.png"
+                            alt=""
+                          />
+                        </span>
+                      </RLink>
                     </div>
                     <div className="-mr-2">
                       <button
@@ -66,14 +71,17 @@ function Navbar() {
                       ))}
                     </nav>
                   </div>
-                  <Link to={'/call'}>
+                  <RLink to={wpLink}>
                     <button
                       type="button"
                       className="mt-4 w-full rounded-md bg-[#fd7e14] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                     >
-                      Schedule a Call
+                      <span className="z-1 position-relative flex gap-3 items-center justify-center">
+                        <i className="fa-brands fa-xl fa-whatsapp hover:text-pulp-orange"></i>
+                        Whatsapp Me
+                      </span>
                     </button>
-                  </Link>
+                  </RLink>
                 </div>
               </div>
             </div>
@@ -85,18 +93,18 @@ function Navbar() {
       <div className="container d-none d-md-block">
         <div className="header-wrapper d-flex justify-content-between align-items-center">
           <div className="logo border bg-[#2e2e2e] rounded-lg w-20">
-            <Link to="/">
+            <RLink to="/">
               <img
                 src="https://res.cloudinary.com/remind-cents-cloud/image/upload/v1707989183/jayraiweb/ebgaihyt77cngxge1inm.png"
                 alt="logo"
               />
-            </Link>
+            </RLink>
           </div>
           <div className="header-menu-wrapper main-menu">
             <nav className="desktop-nav">
               <ul className="header-menu d-flex flex-row justify-content-center menu">
                 {navItems.map((item, index) => (
-                  <li className="px-2 px-lg-3" key={index}>
+                  <li className="px-2 px-lg-3 cursor-pointer" key={index}>
                     <Link className="menu-link" to={item.slug}>
                       {item.name}
                     </Link>
@@ -106,9 +114,15 @@ function Navbar() {
             </nav>
           </div>
           <div className="header-btn-wrapper">
-            <Link className="btn orange-btn btn_effect" to="/call">
-              <span className="z-1 position-relative">Schedule a Call</span>
-            </Link>
+            <RLink
+              className="btn orange-btn btn_effect items-center flex gap-3 hover:text-pulp-orange"
+              to={wpLink}
+            >
+              <span className="z-1 position-relative flex gap-3 items-center">
+                <i className="fa-brands fa-xl fa-whatsapp hover:text-pulp-orange"></i>
+                Whatsapp Me
+              </span>
+            </RLink>
           </div>
         </div>
       </div>
