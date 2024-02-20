@@ -3,6 +3,7 @@ import { ScrollToTop } from '../../components';
 import { Link } from 'react-router-dom';
 import { optionsInfo } from '../Home/data';
 import { wpLink } from '../../components/Navbar/data';
+import Navbar2 from '../../components/Navbar/Navbar2';
 
 function Projects() {
   // State to keep track of the selected option
@@ -16,6 +17,7 @@ function Projects() {
 
   return (
     <div>
+      <Navbar2 />
       <ScrollToTop />
       {/* projects section  */}
       <section

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import {
@@ -12,34 +12,64 @@ import {
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-import { ScrollToTop } from '../../components';
+import { Navbar, ScrollToTop } from '../../components';
 import { wpLink } from '../../components/Navbar/data';
+import emailjs from '@emailjs/browser';
+import { config } from '../../../config';
 
 function Home() {
   // State to keep track of the selected option
+  const form = useRef();
   const [selectedOption, setSelectedOption] = useState(null);
-  const [isColor, setIsColor] = useState(false);
 
   // Function to handle option selection
   const handleOptionSelect = (option) => {
     setSelectedOption(option);
   };
 
+  // email js configurations
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        config.serviceId,
+        config.templateId,
+        form.current,
+        config.publicKey
+      )
+      .then(
+        (result) => {
+          console.log('Email sent successfully');
+          console.log(result.text);
+          e.target.name.value = '';
+          e.target.email.value = '';
+          e.target.phone.value = '';
+          e.target.message.value = '';
+        },
+        (error) => {
+          console.log('Email sent error');
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
-    <>
+    <div className="max-w-screen overflow-hidden">
+      <Navbar />
       <ScrollToTop />
       {/* hero section */}
       <section
         id="home"
         className="pt-1 lg:pt-10 home-four-banner position-relative"
       >
-        <div className="container px-3 lg:px-0 mx-auto custom-container">
+        <div className="container mx-auto custom-container">
           <div className="row">
             <div className="col-12">
               <div className="home-banner-wrapper row align-items-end">
                 <div className="col-12 lg:w-[50%] col-lg-6 col-xxl-7 home-banner-text-col position-relative">
                   <div className="d-flex align-items-center">
-                    <p className="fw-500 black-color text-uppercase mb-30">
+                    <p className="ml-5 lg:ml-0 fw-500 black-color text-uppercase mb-30">
                       Hey I'm
                       <span className="font-urbanist mx-1 font-bold text-pulp-orange">
                         Jay,
@@ -48,7 +78,7 @@ function Home() {
                     </p>
                   </div>
                   <div className="animate-heading">
-                    <h1 className="black-color h1-home-4 fw-500 ah-headline text-5xl lg:text-7xl leading-[4rem] lg:leading-[5.4rem]">
+                    <h1 className="black-color h1-home-4 fw-500 ah-headline text-5xl lg:text-7xl leading-[4rem] lg:leading-[5.4rem] ml-5 lg:ml-0">
                       I Build Stunning Websites
                       <span className="orange-color ml-5 fw-700">
                         for <br />
@@ -74,7 +104,7 @@ function Home() {
                       </span>
                     </h1>
                   </div>
-                  <p className="p line-height-7 lg:pr-8 mt-35 secondary-black fw-400">
+                  <p className="p line-height-7 lg:pr-8 mt-35 secondary-black fw-400 ml-5 mr-5 lg:ml-0">
                     I'm a skilled full stack web developer from Gujarat, India,
                     deeply passionate and committed to my craft. I specialize in
                     crafting modern and visually striking websites for
@@ -82,7 +112,7 @@ function Home() {
                     and unlock greater profit potential through innovative
                     design solutions.
                   </p>
-                  <div className="mt-16 lg:mt-20">
+                  <div className="mt-16 lg:mt-20 ml-5 lg:ml-0">
                     <p className="p black-color fw-500 text-uppercase line-height-3">
                       Find Me
                     </p>
@@ -106,7 +136,7 @@ function Home() {
                   <div className="home-four-banner-spacer"></div>
                 </div>
 
-                <div className="col-12 lg:w-[45%] lg:ml-2 col-lg-6 col-xxl-5 text-center position-relative home-four-banner-img-col mb-5 mb-lg-0">
+                <div className="col-12 pl-6 pr-6 lg:pl-0 lg:pr-0 lg:w-[45%] lg:ml-2 col-lg-6 col-xxl-5 text-center position-relative home-four-banner-img-col mb-5 mb-lg-0">
                   <img
                     className="img-fluid home-banner-img"
                     src="https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708133546/jayraiweb/home/j3ofugkm7idhi6mu9jqo.svg"
@@ -192,7 +222,7 @@ function Home() {
                 <div className="row align-items-center">
                   <div className="about-image-col col-12 col-lg-6 text-center position-relative overflow-hidden pb-3 pb-sm-5">
                     <img
-                      className="img-fluid position-relative z-1"
+                      className="img-fluid px-2 lg:px-0 position-relative z-1"
                       src="https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708246542/jayraiweb/home/th9nqambrfh7xz4xfde7.svg"
                       alt="about image"
                     />
@@ -205,33 +235,33 @@ function Home() {
                   <div className="about-three-text-col col-12 col-lg-6 lg:pl-50 px-3 lg:px-0">
                     <div className="about-text-top">
                       <div className="section-heading">
-                        <div className="sub-heading d-flex align-items-center">
+                        <div className="sub-heading d-flex align-items-center ml-3 lg:ml-0">
                           <img
                             src="https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708134083/jayraiweb/home/czlpwaz97lt3gveh7zaa.png"
                             alt="orange-dot"
                           />
                           <p>About Me</p>
                         </div>
-                        <h2 className="black-color line-height-3 h2">
+                        <h2 className="black-color line-height-3 h2 ml-3 lg:ml-0">
                           I build stunning websites to generate more profits.
                         </h2>
                       </div>
-                      <p className="secondary-black line-height-7 mt-35">
+                      <p className="secondary-black line-height-7 mt-35 ml-3 lg:ml-0 mr-5 lg:mr-0">
                         Hey, Jay here, a 20-year-old full stack developer
                         passionate about crafting stunning websites to help
                         businesses thrive online. With a degree in Computer
                         Applications and 1.5 years of freelancing experience,
-                        I've honed my skills in creating websites that marry
+                        I&apos;ve honed my skills in creating websites that marry
                         beauty with functionality.
                       </p>
-                      <p className="secondary-black line-height-7 mt-30">
+                      <p className="secondary-black line-height-7 mt-30 ml-3 lg:ml-0 mr-5 lg:mr-0">
                         I specialize in turning ideas into reality, delivering
                         sleek and intuitive websites that captivate audiences
                         and drive growth. If you want a website that stands out
-                        and gets results, I'm here to make it happen.
+                        and gets results, I&apos;m here to make it happen.
                       </p>
                     </div>
-                    <div className="row row-mobile-margin gy-3 gy-sm-0 mt-35">
+                    <div className="row row-mobile-margin gy-3 gy-sm-0 mt-35 pl-3 lg:pl-0">
                       <div className="col-12 col-sm-4 col-lg-4 d-flex align-items-center mt-4 lg:mt-0">
                         <div className="about-complete-project">
                           <h4 className="fw-700 orange-color about-count-heading">
@@ -264,7 +294,7 @@ function Home() {
                       </div>
                     </div>
                     <Link
-                      className="btn home-banner-btn orange-btn mt-16 btn_effect"
+                      className="btn home-banner-btn orange-btn lg:mt-16 mt-10 btn_effect ml-3 lg:ml-0"
                       to={wpLink}
                     >
                       <span className="z-1 position-relative flex gap-3 items-center">
@@ -411,53 +441,37 @@ function Home() {
                     {selectedOption && (
                       <div className="flex flex-wrap justify-between w-[100%] gap-3">
                         {optionsInfo[selectedOption].map((item, index) => (
-                          <div
-                            className="portfolio-massonary-four-items mix ui all position-relative lg:max-w-[32%]"
+                          <Link
+                            to={item.link}
                             key={index}
+                            className="lg:max-w-[32%]"
                           >
                             <div
-                              className="modal fade"
-                              id="recentModalSix"
-                              tabIndex="-1"
-                              aria-hidden="true"
+                              className="portfolio-massonary-four-items mix ui all position-relative "
+                              key={index}
                             >
-                              <div className="modal-dialog modal-dialog-centered justify-content-center border-2">
-                                <div>
-                                  <button
-                                    type="button"
-                                    className="btn-close mb-10 btn"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"
-                                  ></button>
-                                  <img
-                                    className="img-fluid"
-                                    src="img/recentSix.png"
-                                    alt="portfolio img"
-                                  />
-                                </div>
+                              <div className="img-overlay-full">
+                                <img
+                                  className="img-fluid rounded-lg"
+                                  src={item.imgUrl}
+                                  alt="portfolio img"
+                                />
+                              </div>
+                              <div className="w-100 justify-content-center align-items-center pt-15">
+                                <p className="secondary-black fw-400 line-height-7 text-uppercase">
+                                  {item.title}
+                                </p>
+                                <Link
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#recentModalSix"
+                                  to={item.link}
+                                  className="h4 black-color fw-600 line-height-3 portfolio-massonary-item-link"
+                                >
+                                  {item.description}
+                                </Link>
                               </div>
                             </div>
-                            <div className="img-overlay-full">
-                              <img
-                                className="img-fluid rounded-lg"
-                                src={item.imgUrl}
-                                alt="portfolio img"
-                              />
-                            </div>
-                            <div className="w-100 justify-content-center align-items-center pt-15">
-                              <p className="secondary-black fw-400 line-height-7 text-uppercase">
-                                {item.title}
-                              </p>
-                              <Link
-                                data-bs-toggle="modal"
-                                data-bs-target="#recentModalSix"
-                                to={item.link}
-                                className="h4 black-color fw-600 line-height-3 portfolio-massonary-item-link"
-                              >
-                                {item.description}
-                              </Link>
-                            </div>
-                          </div>
+                          </Link>
                         ))}
                       </div>
                     )}
@@ -652,7 +666,7 @@ function Home() {
                     </div>
                   </div>
                   <div className="col-12 col-md-6 row-mobile-margin">
-                    <form>
+                    <form method="post" ref={form} onSubmit={sendEmail}>
                       <div className="row g-4">
                         <div className="col-12 w-full col-sm-6">
                           <input
@@ -669,6 +683,8 @@ function Home() {
                             type="email"
                             className="form-control home-four-contact-input"
                             placeholder="Email"
+                            name="email"
+                            id="email"
                           />
                         </div>
                         <div className="col-12 col-sm-6">
@@ -676,6 +692,8 @@ function Home() {
                             type="tel"
                             className="form-control home-four-contact-input"
                             placeholder="Phone"
+                            name="phone"
+                            id="phone"
                           />
                         </div>
 
@@ -683,6 +701,8 @@ function Home() {
                           <textarea
                             className="form-control home-four-contact-input home-four-textarea"
                             placeholder="Message"
+                            name="message"
+                            id="message"
                           ></textarea>
                         </div>
                         <div className="col-12">
@@ -706,7 +726,7 @@ function Home() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 

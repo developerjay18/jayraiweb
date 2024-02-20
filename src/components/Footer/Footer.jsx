@@ -8,7 +8,7 @@ function Footer() {
       <div className="footer-wrapper">
         <div className="">
           <img
-            src="https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708153854/jayraiweb/home/sfx28ksg8ae9g0qocltk.svg"
+            src="https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708407831/jayraiweb/home/d7wpm2cyjv8j0dgvqto8.svg"
             alt=""
             className="object-contain max-w-[100%]"
           />
@@ -40,7 +40,7 @@ function Footer() {
                   <p className="p w-full flex justify-center lg:justify-end text-white line-height-7 text-sm-end">
                     Developed By{' '}
                     <Link to={'https://www.jayraiweb.com'}>
-                      <span className="orange-color uppercase font-urbanist">
+                      <span className="orange-color uppercase font-urbanist ml-2 hover:text-white">
                         JayRai Web.
                       </span>
                     </Link>
