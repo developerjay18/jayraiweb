@@ -90,7 +90,7 @@ function Navbar() {
       </div>
 
       {/* desktop nav  */}
-      <div className="container d-none d-md-block">
+      <div className=" px-16 d-none d-md-block">
         <div className="header-wrapper d-flex justify-content-between align-items-center">
           <div className="logo border bg-[#2e2e2e] rounded-lg w-20">
             <RLink to="/">

@@ -14,7 +14,7 @@ function Footer() {
           />
         </div>
         <div className="footer-bottom">
-          <div className="container border-t border-[#7a7777]">
+          <div className="pl-3 pr-3 lg:px-16 border-t border-[#7a7777]">
             <div className="footer-bottom-container">
               <div className="row">
                 <div className="footerbottom-left col-12 col-sm-5 col-md-6 text-start">

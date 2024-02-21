@@ -24,20 +24,20 @@ const socialLinks = [
 const services = [
   {
     icon: 'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708138410/jayraiweb/home/tvtd3vlwh9bphp2fbn8u.svg',
-    title: 'Business website development',
-    title2: '',
+    title: 'Business website',
+    title2: 'development',
     desc: 'I will provide finest and stunning business websites that will help your business grow online and increase profitability effortlessly.',
   },
   {
     icon: 'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708138410/jayraiweb/home/zr5mdxrrfybt3wsvcrum.svg',
-    title: 'E-Commerce development',
-    title2: '',
+    title: 'E-Commerce',
+    title2: 'development',
     desc: "I'll create a user-friendly website for your store and set up safe payment options using custom code with outstanding animations and SEO.",
   },
   {
     icon: 'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708138410/jayraiweb/home/hmuieefhod5tcso7yxsr.svg',
-    title: 'wordpress development',
-    title2: '',
+    title: 'wordpress',
+    title2: 'development',
     desc: "We'll build you a stunning website that's easy to manage and customize, tailored specifically to your needs. using wordspress templates.",
   },
   {
@@ -154,21 +154,21 @@ const optionsInfo = {
       imgUrl:
         'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708275769/jayraiweb/home/cdyjlibd2e811uythcso.png',
       title: 'Best food services',
-      description: 'A Catering service business in Ahmedabad.',
+      description: 'A Catering service business',
       link: 'https://www.bestfoodservice.in/',
     },
     {
       imgUrl:
         'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708275767/jayraiweb/home/lifwgbsoheuycziyklj2.png',
       title: 'XevoSoft',
-      description: 'An IT company.',
+      description: 'An IT company',
       link: 'https://www.xevosoft.com/',
     },
     {
       imgUrl:
         'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708275769/jayraiweb/home/jrdslikyrgggcztbxv7n.png',
       title: 'astro by yogesh',
-      description: 'An well known Astrolger in Ahemdabad',
+      description: 'An well known Astrolger',
       link: 'https://www.astrobyyogesh.com/',
     },
     {
@@ -182,7 +182,7 @@ const optionsInfo = {
       imgUrl:
         'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708275769/jayraiweb/home/wucbpzawpkz70lq2s82h.png',
       title: 'Yash sharma digital',
-      description: 'A Freelance Digital marketer from Ahmedabad.',
+      description: 'A Freelance Digital marketer',
       link: 'https://www.yashsharmadigital.com/',
     },
     {
@@ -198,21 +198,21 @@ const optionsInfo = {
       imgUrl:
         'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708275769/jayraiweb/home/cdyjlibd2e811uythcso.png',
       title: 'Best food services',
-      description: 'A Catering service business in Ahmedabad.',
+      description: 'A Catering service business',
       link: 'https://www.bestfoodservice.in/',
     },
     {
       imgUrl:
         'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708275767/jayraiweb/home/lifwgbsoheuycziyklj2.png',
       title: 'XevoSoft',
-      description: 'An IT company.',
+      description: 'An IT company',
       link: 'https://www.xevosoft.com/',
     },
     {
       imgUrl:
         'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708275769/jayraiweb/home/jrdslikyrgggcztbxv7n.png',
       title: 'astro by yogesh',
-      description: 'An well known Astrolger in Ahemdabad',
+      description: 'An well known Astrolger',
       link: 'https://www.astrobyyogesh.com/',
     },
     {
@@ -226,7 +226,7 @@ const optionsInfo = {
       imgUrl:
         'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708275769/jayraiweb/home/wucbpzawpkz70lq2s82h.png',
       title: 'Yash sharma digital',
-      description: 'A Freelance Digital marketer from Ahmedabad.',
+      description: 'A Freelance Digital marketer',
       link: 'https://www.yashsharmadigital.com/',
     },
     {
@@ -242,21 +242,21 @@ const optionsInfo = {
       imgUrl:
         'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708275769/jayraiweb/home/cdyjlibd2e811uythcso.png',
       title: 'Best food services',
-      description: 'A Catering service business in Ahmedabad.',
+      description: 'A Catering service business',
       link: 'https://www.bestfoodservice.in/',
     },
     {
       imgUrl:
         'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708275767/jayraiweb/home/lifwgbsoheuycziyklj2.png',
       title: 'XevoSoft',
-      description: 'An IT company.',
+      description: 'An IT company',
       link: 'https://www.xevosoft.com/',
     },
     {
       imgUrl:
         'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708275769/jayraiweb/home/jrdslikyrgggcztbxv7n.png',
       title: 'astro by yogesh',
-      description: 'An well known Astrolger in Ahemdabad',
+      description: 'An well known Astrolger',
       link: 'https://www.astrobyyogesh.com/',
     },
     {
@@ -270,7 +270,7 @@ const optionsInfo = {
       imgUrl:
         'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708275769/jayraiweb/home/wucbpzawpkz70lq2s82h.png',
       title: 'Yash sharma digital',
-      description: 'A Freelance Digital marketer from Ahmedabad.',
+      description: 'A Freelance Digital marketer',
       link: 'https://www.yashsharmadigital.com/',
     },
     {
@@ -286,21 +286,21 @@ const optionsInfo = {
       imgUrl:
         'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708275769/jayraiweb/home/cdyjlibd2e811uythcso.png',
       title: 'Best food services',
-      description: 'A Catering service business in Ahmedabad.',
+      description: 'A Catering service business',
       link: 'https://www.bestfoodservice.in/',
     },
     {
       imgUrl:
         'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708275767/jayraiweb/home/lifwgbsoheuycziyklj2.png',
       title: 'XevoSoft',
-      description: 'An IT company.',
+      description: 'An IT company',
       link: 'https://www.xevosoft.com/',
     },
     {
       imgUrl:
         'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708275769/jayraiweb/home/jrdslikyrgggcztbxv7n.png',
       title: 'astro by yogesh',
-      description: 'An well known Astrolger in Ahemdabad',
+      description: 'An well known Astrolger',
       link: 'https://www.astrobyyogesh.com/',
     },
     {
@@ -314,7 +314,7 @@ const optionsInfo = {
       imgUrl:
         'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708275769/jayraiweb/home/wucbpzawpkz70lq2s82h.png',
       title: 'Yash sharma digital',
-      description: 'A Freelance Digital marketer from Ahmedabad.',
+      description: 'A Freelance Digital marketer',
       link: 'https://www.yashsharmadigital.com/',
     },
     {
@@ -330,21 +330,21 @@ const optionsInfo = {
       imgUrl:
         'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708275769/jayraiweb/home/cdyjlibd2e811uythcso.png',
       title: 'Best food services',
-      description: 'A Catering service business in Ahmedabad.',
+      description: 'A Catering service business',
       link: 'https://www.bestfoodservice.in/',
     },
     {
       imgUrl:
         'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708275767/jayraiweb/home/lifwgbsoheuycziyklj2.png',
       title: 'XevoSoft',
-      description: 'An IT company.',
+      description: 'An IT company',
       link: 'https://www.xevosoft.com/',
     },
     {
       imgUrl:
         'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708275769/jayraiweb/home/jrdslikyrgggcztbxv7n.png',
       title: 'astro by yogesh',
-      description: 'An well known Astrolger in Ahemdabad',
+      description: 'An well known Astrolger',
       link: 'https://www.astrobyyogesh.com/',
     },
     {
@@ -358,7 +358,7 @@ const optionsInfo = {
       imgUrl:
         'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708275769/jayraiweb/home/wucbpzawpkz70lq2s82h.png',
       title: 'Yash sharma digital',
-      description: 'A Freelance Digital marketer from Ahmedabad.',
+      description: 'A Freelance Digital marketer',
       link: 'https://www.yashsharmadigital.com/',
     },
     {

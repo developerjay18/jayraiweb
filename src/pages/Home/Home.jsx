@@ -63,7 +63,7 @@ function Home() {
         id="home"
         className="pt-1 lg:pt-10 home-four-banner position-relative"
       >
-        <div className="container mx-auto custom-container">
+        <div className="lg:px-16 mx-auto customcontainer">
           <div className="row">
             <div className="col-12">
               <div className="home-banner-wrapper row align-items-end">
@@ -138,7 +138,7 @@ function Home() {
 
                 <div className="col-12 pl-6 pr-6 lg:pl-0 lg:pr-0 lg:w-[45%] lg:ml-2 col-lg-6 col-xxl-5 text-center position-relative home-four-banner-img-col mb-5 mb-lg-0">
                   <img
-                    className="img-fluid home-banner-img"
+                    className="img-fluid home-banner-img lg:ml-4"
                     src="https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708133546/jayraiweb/home/j3ofugkm7idhi6mu9jqo.svg"
                     alt="banner-image"
                   />
@@ -165,8 +165,8 @@ function Home() {
       </section>
 
       {/* slider companies worked  */}
-      <section className="partners-four">
-        <div className="container">
+      <section className="partners-four pt-28 lg:pb-28">
+        <div className="lg:px-16">
           <div className="row">
             <div className="col-12">
               <div className="partners-wrapper">
@@ -207,7 +207,7 @@ function Home() {
                 </div>
 
                 {/* mobile carousel  */}
-                <div className="partner-four-grid-list-container row-mobile-margin mt-50 lg:hidden block">
+                <div className="partner-four-grid-list-container row-mobile-margin mt-50 lg:hidden block px-4">
                   <OwlCarousel
                     className="owl-theme"
                     loop
@@ -239,7 +239,7 @@ function Home() {
         id="about"
         className="about overflowx-hidden bg-[#fff3ea] pb-20 mb-0"
       >
-        <div className="container">
+        <div className="lg:px-16 pl-3 pr-3">
           <div className="row">
             <div className="col-12">
               <div className="about-wrapper">
@@ -266,11 +266,11 @@ function Home() {
                           />
                           <p>About Me</p>
                         </div>
-                        <h2 className="black-color line-height-3 h2 ml-3 lg:ml-0">
+                        <h2 className="black-color line-height-3 h2">
                           I build stunning websites to generate more profits.
                         </h2>
                       </div>
-                      <p className="secondary-black line-height-7 mt-35 ml-3 lg:ml-0 mr-5 lg:mr-0">
+                      <p className="secondary-black line-height-7 mt-35 pl-3 pr-3 lg:px-0">
                         Hey, Jay here, a 20-year-old full stack developer
                         passionate about crafting stunning websites to help
                         businesses thrive online. With a degree in Computer
@@ -278,7 +278,7 @@ function Home() {
                         I&apos;ve honed my skills in creating websites that
                         marry beauty with functionality.
                       </p>
-                      <p className="secondary-black line-height-7 mt-30 ml-3 lg:ml-0 mr-5 lg:mr-0">
+                      <p className="secondary-black line-height-7 mt-30 pl-3 pr-3 lg:px-0">
                         I specialize in turning ideas into reality, delivering
                         sleek and intuitive websites that captivate audiences
                         and drive growth. If you want a website that stands out
@@ -335,8 +335,8 @@ function Home() {
       </section>
 
       {/* services section  */}
-      <section id="services" className="services pb-16 lg:pb-24">
-        <div className="container">
+      <section id="services" className="services pt-24 pb-20 lg:pb-24">
+        <div className="lg:px-16 pr-3 pl-3">
           <div className="row">
             <div className="col-12">
               <div className="services-wrapper">
@@ -380,8 +380,8 @@ function Home() {
       </section>
 
       {/* projects section  */}
-      <section id="projects" className="portfolio-two pt-10 pb-20 bg-[#fff3ea]">
-        <div className="container">
+      <section id="projects" className="portfolio-two pt-24 pb-24 bg-[#fff3ea]">
+        <div className="lg:px-16 pr-3 pl-3">
           <div className="row">
             <div className="col-12">
               <div className="portfolio-wrapper">
@@ -468,7 +468,7 @@ function Home() {
                           <Link
                             to={item.link}
                             key={index}
-                            className="lg:max-w-[32%]"
+                            className="lg:min-w-[30%]"
                           >
                             <div
                               className="portfolio-massonary-four-items mix ui all position-relative "
@@ -520,8 +520,8 @@ function Home() {
       </section>
 
       {/* slider companies certifications  */}
-      <section className="partners-four">
-        <div className="container">
+      <section className="partners-four pt-20 pb-20">
+        <div className="lg:px-16 ">
           <div className="row">
             <div className="col-12">
               <div className="partners-wrapper">
@@ -562,7 +562,7 @@ function Home() {
                 </div>
 
                 {/* mobile carousel  */}
-                <div className="partner-four-grid-list-container row-mobile-margin mt-50 lg:hidden block">
+                <div className="partner-four-grid-list-container row-mobile-margin mt-50 lg:hidden block px-4">
                   <OwlCarousel
                     className="owl-theme"
                     loop
@@ -592,9 +592,9 @@ function Home() {
       {/* testimonials section  */}
       <section
         id="testimonials"
-        className="testimonial lg:pt-20 lg:pb-10 bg-[#fff3ea]"
+        className="testimonial pt-24 pb-24 bg-[#fff3ea]"
       >
-        <div className="container">
+        <div className="lg:px-16 pr-3 pl-3">
           <div className="row">
             <div className="section-heading-middle pb-10">
               <div className="sub-heading d-flex align-items-center mx-auto">
@@ -660,18 +660,15 @@ function Home() {
       </section>
 
       {/* contact form  */}
-      <section
-        id="contact"
-        className="home-four-contact lg:pt-28 pb-20 lg:pb-28"
-      >
-        <div className="container px-3 lg:px-0">
+      <section id="contact" className="home-four-contact pt-24 pb-24">
+        <div className="lg:px-16 pr-3 pl-3">
           <div className="row">
             <div className="col-12">
               <div className="home-contact-wrapper">
                 <div className="home-contact-info-container row align-items-center">
-                  <div className="col-12 col-md-6 home-two-contactinfo-col ml-3 lg:ml-0 mr-3 lg:mr-0">
-                    <div className="section-heading">
-                      <div className="sub-heading d-flex align-items-center">
+                  <div className="col-12 col-md-6 home-two-contactinfo-col ml-3 lg:ml-0 mr-3 lg:mr-0 ">
+                    <div className="section-heading w-full">
+                      <div className="sub-heading w-full d-flex align-items-center">
                         <img
                           src="https://res.cloudinary.com/remind-cents-cloud/image/upload/v1708134083/jayraiweb/home/czlpwaz97lt3gveh7zaa.png"
                           alt="orange-dot"
@@ -679,7 +676,7 @@ function Home() {
                         <p>Contact Me</p>
                       </div>
                       <h2 className="black-color line-height-3 h2">
-                        Need help? Get in touch now!
+                        Need help? Get <br /> in touch now!
                       </h2>
                     </div>
                     <div className="row mt-4 lg:pt-6 row-mobile-margin gy-3 gy-sm-0 row-mobile-margin mt-50">
