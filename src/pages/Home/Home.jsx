@@ -178,11 +178,12 @@ function Home() {
                     />
                     <p className="capitalize">Worked with</p>
                   </div>
-                  <h2 className="black-color line-height-3 h2 text-uppercase text-center">
+                  <h2 className="black-color line-height-3 h2 text-uppercase text-center ">
                     companies i worked with
                   </h2>
                 </div>
-                <div className="partner-four-grid-list-container row-mobile-margin mt-50">
+                {/* desktop carousel  */}
+                <div className="partner-four-grid-list-container row-mobile-margin mt-50 hidden lg:block">
                   <OwlCarousel
                     className="owl-theme"
                     loop
@@ -193,6 +194,29 @@ function Home() {
                   >
                     {clients.map((item, index) => (
                       <div className="item mx-5" key={index}>
+                        <div className="partner-logo-card-two p-0">
+                          <img
+                            className="text-center min-w-[90%]  partner-img"
+                            src={item}
+                            alt="partner-image"
+                          />
+                        </div>
+                      </div>
+                    ))}
+                  </OwlCarousel>
+                </div>
+
+                {/* mobile carousel  */}
+                <div className="partner-four-grid-list-container row-mobile-margin mt-50 lg:hidden block">
+                  <OwlCarousel
+                    className="owl-theme"
+                    loop
+                    margin={0}
+                    autoplay={true}
+                    autoplayTimeout={2000}
+                  >
+                    {clients.map((item, index) => (
+                      <div className="item mx-3" key={index}>
                         <div className="partner-logo-card-two p-0">
                           <img
                             className="text-center min-w-[90%]  partner-img"
@@ -251,8 +275,8 @@ function Home() {
                         passionate about crafting stunning websites to help
                         businesses thrive online. With a degree in Computer
                         Applications and 1.5 years of freelancing experience,
-                        I&apos;ve honed my skills in creating websites that marry
-                        beauty with functionality.
+                        I&apos;ve honed my skills in creating websites that
+                        marry beauty with functionality.
                       </p>
                       <p className="secondary-black line-height-7 mt-30 ml-3 lg:ml-0 mr-5 lg:mr-0">
                         I specialize in turning ideas into reality, delivering
@@ -328,7 +352,7 @@ function Home() {
                     My Services
                   </h2>
                 </div>
-                <div className="service-gridcontainer mt-50 row-mobile-margin flex flex-col lg:flex-row justify-between gap-3 lg:gap-0">
+                <div className="service-gridcontainer mt-50 row-mobile-margin flex flex-col lg:flex-row justify-between gap-3 lg:gap-0 mx-3 lg:mx-0">
                   {services.map((item, index) => (
                     <div
                       className="service-grid-item text-start lg:w-[24%]"
@@ -513,7 +537,8 @@ function Home() {
                     certified from
                   </h2>
                 </div>
-                <div className="partner-four-grid-list-container row-mobile-margin mt-50">
+                {/* desktop carousel  */}
+                <div className="partner-four-grid-list-container row-mobile-margin mt-50 hidden lg:block">
                   <OwlCarousel
                     className="owl-theme"
                     loop
@@ -524,6 +549,29 @@ function Home() {
                   >
                     {certifications.map((item, index) => (
                       <div className="item mx-5" key={index}>
+                        <div className="partner-logo-card-two p-0">
+                          <img
+                            className="text-center min-w-[90%]  partner-img"
+                            src={item}
+                            alt="partner-image"
+                          />
+                        </div>
+                      </div>
+                    ))}
+                  </OwlCarousel>
+                </div>
+
+                {/* mobile carousel  */}
+                <div className="partner-four-grid-list-container row-mobile-margin mt-50 lg:hidden block">
+                  <OwlCarousel
+                    className="owl-theme"
+                    loop
+                    margin={0}
+                    autoplay={true}
+                    autoplayTimeout={2000}
+                  >
+                    {certifications.map((item, index) => (
+                      <div className="item mx-3" key={index}>
                         <div className="partner-logo-card-two p-0">
                           <img
                             className="text-center min-w-[90%]  partner-img"
@@ -591,7 +639,7 @@ function Home() {
                       </div>
                       <div className="testimonial-images">
                         <div className="testimonial-four-card">
-                          <h5 className="h5 fw-400 line-height-6 secondary-black">
+                          <h5 className="h5 fw-400 line-height-6 secondary-black mr-4">
                             {item.review}
                           </h5>
                           <h4 className="black-color fw-600 line-height-3 testimonial-four-name capitalize">
@@ -621,7 +669,7 @@ function Home() {
             <div className="col-12">
               <div className="home-contact-wrapper">
                 <div className="home-contact-info-container row align-items-center">
-                  <div className="col-12 col-md-6 home-two-contactinfo-col">
+                  <div className="col-12 col-md-6 home-two-contactinfo-col ml-3 lg:ml-0 mr-3 lg:mr-0">
                     <div className="section-heading">
                       <div className="sub-heading d-flex align-items-center">
                         <img
@@ -665,10 +713,10 @@ function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-12 col-md-6 row-mobile-margin">
+                  <div className="col-12 col-md-6 row-mobile-margin ml-3 lg:ml-0">
                     <form method="post" ref={form} onSubmit={sendEmail}>
                       <div className="row g-4">
-                        <div className="col-12 w-full col-sm-6">
+                        <div className="col-11 lg:w-full col-sm-6">
                           <input
                             type="text"
                             className="form-control home-four-contact-input"
@@ -678,7 +726,7 @@ function Home() {
                           />
                         </div>
 
-                        <div className="col-12 col-sm-6">
+                        <div className="col-11 col-sm-6">
                           <input
                             type="email"
                             className="form-control home-four-contact-input"
@@ -687,7 +735,7 @@ function Home() {
                             id="email"
                           />
                         </div>
-                        <div className="col-12 col-sm-6">
+                        <div className="col-11 col-sm-6">
                           <input
                             type="tel"
                             className="form-control home-four-contact-input"
@@ -697,7 +745,7 @@ function Home() {
                           />
                         </div>
 
-                        <div className="col-12">
+                        <div className="col-11 col-sm-12">
                           <textarea
                             className="form-control home-four-contact-input home-four-textarea"
                             placeholder="Message"
@@ -705,7 +753,7 @@ function Home() {
                             id="message"
                           ></textarea>
                         </div>
-                        <div className="col-12">
+                        <div className="col-11">
                           <div className="col-12">
                             <button
                               type="submit"
