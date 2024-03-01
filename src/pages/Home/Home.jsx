@@ -463,12 +463,12 @@ function Home() {
                   {/* write all rendering JS logic here  */}
                   <div className="portfoliomassonary-container">
                     {selectedOption && (
-                      <div className="flex flex-wrap justify-between w-[100%] gap-3">
+                      <div className="flex flex-wrap justify-between w-[100%] gap-1">
                         {optionsInfo[selectedOption].map((item, index) => (
                           <Link
                             to={item.link}
                             key={index}
-                            className="lg:min-w-[30%]"
+                            className="lg:max-w-[32%]"
                           >
                             <div
                               className="portfolio-massonary-four-items mix ui all position-relative "
