@@ -192,6 +192,13 @@ const optionsInfo = {
       description: 'A Loan Settlement agency',
       link: 'https://www.decentsettlement.com/',
     },
+    {
+      imgUrl:
+        'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1709297113/jayraiweb/home/om4v6k2unehyua4s67ia.svg',
+      title: 'Naagnechi Furniture',
+      description: 'A Furniture business',
+      link: 'https://www.naagnechifurniture.online/',
+    },
   ],
   option2: [
     {
@@ -235,6 +242,13 @@ const optionsInfo = {
       title: 'Decent settlement',
       description: 'A Loan Settlement agency',
       link: 'https://www.decentsettlement.com/',
+    },
+    {
+      imgUrl:
+        'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1709297113/jayraiweb/home/om4v6k2unehyua4s67ia.svg',
+      title: 'Naagnechi Furniture',
+      description: 'A Furniture business',
+      link: 'https://www.naagnechifurniture.online/',
     },
   ],
   option3: [
@@ -280,6 +294,13 @@ const optionsInfo = {
       description: 'A Loan Settlement agency',
       link: 'https://www.decentsettlement.com/',
     },
+    {
+      imgUrl:
+        'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1709297113/jayraiweb/home/om4v6k2unehyua4s67ia.svg',
+      title: 'Naagnechi Furniture',
+      description: 'A Furniture business',
+      link: 'https://www.naagnechifurniture.online/',
+    },
   ],
   option4: [
     {
@@ -324,6 +345,13 @@ const optionsInfo = {
       description: 'A Loan Settlement agency',
       link: 'https://www.decentsettlement.com/',
     },
+    {
+      imgUrl:
+        'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1709297113/jayraiweb/home/om4v6k2unehyua4s67ia.svg',
+      title: 'Naagnechi Furniture',
+      description: 'A Furniture business',
+      link: 'https://www.naagnechifurniture.online/',
+    },
   ],
   option5: [
     {
@@ -367,6 +395,13 @@ const optionsInfo = {
       title: 'Decent settlement',
       description: 'A Loan Settlement agency',
       link: 'https://www.decentsettlement.com/',
+    },
+    {
+      imgUrl:
+        'https://res.cloudinary.com/remind-cents-cloud/image/upload/v1709297113/jayraiweb/home/om4v6k2unehyua4s67ia.svg',
+      title: 'Naagnechi Furniture',
+      description: 'A Furniture business',
+      link: 'https://www.naagnechifurniture.online/',
     },
   ],
 };

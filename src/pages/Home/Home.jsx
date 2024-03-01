@@ -719,6 +719,7 @@ function Home() {
                             className="form-control home-four-contact-input"
                             name="name"
                             id="name"
+                            required
                             placeholder="Name"
                           />
                         </div>
@@ -729,6 +730,7 @@ function Home() {
                             className="form-control home-four-contact-input"
                             placeholder="Email"
                             name="email"
+                            required
                             id="email"
                           />
                         </div>
@@ -738,6 +740,7 @@ function Home() {
                             className="form-control home-four-contact-input"
                             placeholder="Phone"
                             name="phone"
+                            required
                             id="phone"
                           />
                         </div>
@@ -747,6 +750,7 @@ function Home() {
                             className="form-control home-four-contact-input home-four-textarea"
                             placeholder="Message"
                             name="message"
+                            required
                             id="message"
                           ></textarea>
                         </div>
